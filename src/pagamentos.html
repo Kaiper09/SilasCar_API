@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/cliente.css">
+    <title>Pagamentos</title>
+</head>
+<body>
+
+<header class="header">
+    <h1>SilasCar</h1>
+
+    <nav class="menus">
+        <a href="cliente.html">Clientes</a>
+        <a href="veiculos.html">Veículos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="pagamentos.html">Pagamentos</a>
+    </nav>
+</header>
+
+ <button id="carregar_pagamentos">Carregar Pagamentos</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID pagamento</th>
+                <th>Placa veículo</th>
+                <th>Nome proprietario</th>
+                <th>Data</th>
+                <th>Método</th>
+                <th>Data de vencimento</th>
+                <th>Situação</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody id="listagem"></tbody>
+    </table>
+
+
+    <script src="script/pagamentos.js"></script>
+</body>
+
+</html>

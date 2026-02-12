@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/cliente.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <title>Cliente</title>
+</head>
+<body>
+
+<header class="header">
+    <h1>SilasCar</h1>
+
+    <nav class="menus">
+        <a href="cliente.html">Clientes</a>
+        <a href="veiculos.html">Veículos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="pagamentos.html">Pagamentos</a>
+    </nav>
+</header>
+
+<button id="carregar_clientes">Carregar Clientes</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Nascimento</th>
+            <th>Número</th>
+            <th>Cidade</th>
+            <th>Situação</th>
+            <th>Selecionar</th>
+        </tr>
+    </thead>
+    <tbody id="listagem"></tbody>
+</table>
+
+<br>
+<!--modal-->
+    <div id="modal">
+        <label>CPF: <input type="text" id="cliente-cpf"/>
+        </label>
+        <br>
+        <label>Nome: <input type="text" id="cliente-nome">
+        </label>
+        <br>
+        <label>Nascimento: <input type="date"  id="cliente-nascimento"  max="2007-07-7">
+        </label>
+        <br>
+        <label>Numero: <input type="text" id="cliente-numero">
+        </label>
+        <br>
+        <label>Cidade: <input type="text" id="cliente-cidade"></label>
+        <br>
+
+          <label>Situação:</label>
+    <select id="situacao">
+        <option value="ativo">Ativo</option>
+        <option value="inativo">Inativo</option>
+    </select>
+<br><br>
+
+
+    <script src="script/cliente.js"></script>
+</body>
+</html>

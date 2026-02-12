@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/cliente.css">
+    <title>Serviços</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>SilasCar</h1>
+
+        <nav class="menus">
+            <a href="cliente.html">Clientes</a>
+            <a href="veiculos.html">Veículos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="pagamentos.html">Pagamentos</a>
+        </nav>
+    </header>
+
+    <button id="carregar_servicos">Carregar Servicos</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Placa do veiculo</th>
+                <th>Nome cliente</th>
+                <th>Serviço Feito</th>
+                <th>Data</th>
+                <th>Valor</th>
+                <th>Situacao</th>
+            </tr>
+        </thead>
+        <tbody id="listagem"></tbody>
+    </table>
+
+
+    <script src="script/servicos.js"></script>
+</body>
+
+</html>
