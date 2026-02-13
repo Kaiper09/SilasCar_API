@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/cliente.css">
+    <link rel="stylesheet" href="style/servicos.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <title>Serviços</title>
 </head>
 
@@ -33,10 +34,42 @@
                 <th>Data</th>
                 <th>Valor</th>
                 <th>Situacao</th>
+                <th>Selecionar</th>
             </tr>
         </thead>
         <tbody id="listagem"></tbody>
     </table>
+<!-- MODAL -->
+<div id="modal">
+    <label>Id:
+        <input type="text" id="s-id">
+    </label><br>
+
+    <label>Placa do Veiculo:
+        <input type="text" id="s-placa">
+    </label><br>
+
+    <label>Nome do dono:
+        <input type="text" id="s-nome-dono">
+    </label><br>
+
+    <label>Serviço realizado:
+        <input type="text" id="s-servico">
+    </label><br>
+
+    <label>Data:
+        <input type="date" id="s-data">
+    </label><br>
+
+    <label>Valor:
+        <input type="text" id="s-valor">
+    </label><br>
+
+    <label>Situacao:
+        <input type="text" id="s-situacao">
+    </label><br>
+    </div>
+<br><br>
 
 
     <script src="script/servicos.js"></script>

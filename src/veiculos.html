@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/cliente.css">
+    <link rel="stylesheet" href="style/veiculos.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <title>Veiculos</title>
 </head>
 <body>
@@ -30,11 +32,43 @@
             <th>Ano veiculo</th>
             <th>Veiculo</th>
             <th>KM</th>
+            <th>Selecionar</th>
            
         </tr>
     </thead>
     <tbody id="listagem"></tbody>
 </table>
+
+<br>
+
+<!-- MODAL -->
+<div id="modal">
+    <label>CPF Dono:
+        <input type="text" id="v-cpf_dono">
+    </label><br>
+
+    <label>Nome do dono:
+        <input type="text" id="v-nome">
+    </label><br>
+
+    <label>Placa:
+        <input type="text" id="v-placa">
+    </label><br>
+
+    <label>Ano:
+        <input type="text" id="v-ano">
+    </label><br>
+
+    <label>Veículo:
+        <input type="text" id="v-nome_veiculo">
+    </label><br>
+
+    <label>Quilometragem:
+        <input type="text" id="v-km">
+    </label><br>
+    </div>
+<br><br>
+
 
 
     <script src="script/veiculo.js"></script>

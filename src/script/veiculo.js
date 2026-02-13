@@ -30,6 +30,34 @@ function criarVeiculo(v) {
         <td>${v.nome_veiculo}</td>
         <td>${v.km_veiculo}</td>
     `;
+    const tdBotao = document.createElement("td");
+    const botao = document.createElement("button");
 
+    
+    botao.addEventListener("click", function () {
+        abrirModal(v);
+    });
+
+    // ícone Lucide
+    botao.innerHTML = `<i data-lucide="eye"></i>`; 
+    botao.classList.add("btn-detalhes");
+
+    tdBotao.appendChild(botao);
+    tr.appendChild(tdBotao);
     listagem.appendChild(tr);
+
+    // renderiza o ícone
+    lucide.createIcons();
+}
+
+
+function abrirModal(veiculo) {
+    document.getElementById("modal").style.display = "block";
+
+    document.getElementById("v-cpf_dono").value = veiculo.cpf_dono;
+    document.getElementById("v-nome").value = veiculo.nome;
+    document.getElementById("v-placa").value = veiculo.placa_veiculo;
+    document.getElementById("v-ano").value = veiculo.ano;
+    document.getElementById("v-nome_veiculo").value = veiculo.nome_veiculo;
+    document.getElementById("v-km").value = veiculo.km_veiculo;
 }
